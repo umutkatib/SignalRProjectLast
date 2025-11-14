@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36429.23 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRApi", "SignalRApi\SignalRApi.csproj", "{97022AA2-5D77-44F8-B1EE-39F0D8D1837A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRWebUI", "SignalRWebUI\SignalRWebUI.csproj", "{22C989A8-802F-48AE-970F-05656882F131}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.EntityLayer", "SignalR.EntityLayer\SignalR.EntityLayer.csproj", "{8FC2BF9A-52EE-4B19-AD2B-382163657587}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.DataAccessLayer", "SignalR.DataAccessLayer\SignalR.DataAccessLayer.csproj", "{9513C6CD-6F68-4EEF-8C79-82497AB10CFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.DtoLayer", "SignalR.DtoLayer\SignalR.DtoLayer.csproj", "{3DE81356-83F7-416E-985F-7B149C4697D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.BusinessLayer", "SignalR.BusinessLayer\SignalR.BusinessLayer.csproj", "{0039EFC3-BE78-43CE-8A6D-961FD618EC70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97022AA2-5D77-44F8-B1EE-39F0D8D1837A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97022AA2-5D77-44F8-B1EE-39F0D8D1837A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97022AA2-5D77-44F8-B1EE-39F0D8D1837A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97022AA2-5D77-44F8-B1EE-39F0D8D1837A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22C989A8-802F-48AE-970F-05656882F131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C989A8-802F-48AE-970F-05656882F131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22C989A8-802F-48AE-970F-05656882F131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22C989A8-802F-48AE-970F-05656882F131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FC2BF9A-52EE-4B19-AD2B-382163657587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC2BF9A-52EE-4B19-AD2B-382163657587}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC2BF9A-52EE-4B19-AD2B-382163657587}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC2BF9A-52EE-4B19-AD2B-382163657587}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9513C6CD-6F68-4EEF-8C79-82497AB10CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9513C6CD-6F68-4EEF-8C79-82497AB10CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9513C6CD-6F68-4EEF-8C79-82497AB10CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9513C6CD-6F68-4EEF-8C79-82497AB10CFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DE81356-83F7-416E-985F-7B149C4697D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DE81356-83F7-416E-985F-7B149C4697D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DE81356-83F7-416E-985F-7B149C4697D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DE81356-83F7-416E-985F-7B149C4697D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0039EFC3-BE78-43CE-8A6D-961FD618EC70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0039EFC3-BE78-43CE-8A6D-961FD618EC70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0039EFC3-BE78-43CE-8A6D-961FD618EC70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0039EFC3-BE78-43CE-8A6D-961FD618EC70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {615CE18D-8893-4EBB-89DD-C10897B036C0}
+	EndGlobalSection
+EndGlobal
