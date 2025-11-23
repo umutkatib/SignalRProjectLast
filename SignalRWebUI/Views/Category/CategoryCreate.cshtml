@@ -1,4 +1,4 @@
-﻿@model SignalRWebUI.Dtos.CategoryDtos.CreateCategoryDto
+﻿@model CreateCategoryDto
 
 @{
     ViewData["Title"] = "CategoryCreate";
@@ -17,7 +17,7 @@
 						</div>
 						<div class="card-body">
 							<div class="form-group">
-								<label for="CategoryName">Kategori Adı</label>
+								<label asp-for="CategoryName">Kategori Adı</label>
 								<input asp-for="CategoryName" type="text" class="form-control" id="CategoryName" placeholder="Kategori Adını Giriniz">
 							</div>
 						</div>

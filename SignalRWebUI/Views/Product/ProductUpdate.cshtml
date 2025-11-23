@@ -1,0 +1,58 @@
+﻿@model UpdateProductDto
+
+@{
+    ViewData["Title"] = "ProductUpdate";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Ürün</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<form method="post">
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Ürün Güncelleme</div>
+						</div>
+						<input type="hidden" asp-for="ProductID" />
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="ProductName">Ürün Adı</label>
+								<input asp-for="ProductName" type="text" class="form-control" id="ProductName" placeholder="Ürün Adını Giriniz">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="ProductPrice">Ürün Fiyatı</label>
+								<input asp-for="ProductPrice" type="text" class="form-control" id="ProductPrice" placeholder="Ürün Fiyatını Giriniz">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="ProductImageUrl">Ürün Görseli</label>
+								<input asp-for="ProductImageUrl" type="text" class="form-control" id="ProductImageUrl" placeholder="Ürün Görselini Giriniz">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="CategoryID">Ürün Kategorisi</label>
+								@Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.v,
+																new { @class = "form-control" })
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="ProductDescription">Ürün Açıklaması</label>
+								<input asp-for="ProductDescription" type="text" class="form-control" id="ProductDescription" placeholder="Ürün Açıklamasını Giriniz">
+							</div>
+						</div>
+						<div class="card-action">
+							<button class="btn btn-success">Güncelle</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
