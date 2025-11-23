@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SignalR.BusinessLayer.Abstract;
 using SignalR.DtoLayer.BookingDto;
@@ -11,16 +12,18 @@ namespace SignalRApi.Controllers
 	public class BookingsController : ControllerBase
 	{
 		private readonly IBookingService _bookingService;
+		private readonly IMapper _mapper;
 
-		public BookingsController(IBookingService bookingService)
+		public BookingsController(IBookingService bookingService, IMapper mapper)
 		{
 			_bookingService = bookingService;
+			_mapper = mapper;
 		}
 
 		[HttpGet]
 		public IActionResult BookingList()
 		{
-			var values = _bookingService.TGetListAll();
+			var values = _mapper.Map<List<ResultBookingDto>>(_bookingService.TGetListAll());
 			return Ok(values);
 		}
 
