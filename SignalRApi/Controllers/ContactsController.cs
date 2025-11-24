@@ -41,7 +41,7 @@ namespace SignalRApi.Controllers
 			return Ok("Contact has added successfully!");
 		}
 
-		[HttpDelete]
+		[HttpDelete("{id}")]
 		public IActionResult ContactDelete(int id)
 		{
 			var value = _contactService.TGetById(id);
@@ -49,7 +49,7 @@ namespace SignalRApi.Controllers
 			return Ok("Contact has deleted successfully!");
 		}
 
-		[HttpGet("ContactGet")]
+		[HttpGet("{id}")]
 		public IActionResult ContactGet(int id)
 		{
 			var value = _contactService.TGetById(id);
