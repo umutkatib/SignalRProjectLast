@@ -40,7 +40,7 @@ namespace SignalRApi.Controllers
 			return Ok("About has added successfully!");
 		}
 
-		[HttpDelete]
+		[HttpDelete("{id}")]
 		public IActionResult AboutDelete(int id)
 		{
 			var value = _aboutService.TGetById(id);
@@ -48,7 +48,7 @@ namespace SignalRApi.Controllers
 			return Ok("About has deleted successfully!");
 		}
 
-		[HttpGet("AboutGet")]
+		[HttpGet("{id}")]
 		public IActionResult AboutGet(int id)
 		{
 			var value = _aboutService.TGetById(id);
