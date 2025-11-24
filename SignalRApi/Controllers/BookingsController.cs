@@ -42,7 +42,7 @@ namespace SignalRApi.Controllers
 			return Ok("Booking has added successfully!");
 		}
 
-		[HttpDelete]
+		[HttpDelete("{id}")]
 		public IActionResult BookingDelete(int id)
 		{
 			var value = _bookingService.TGetById(id);
@@ -50,7 +50,7 @@ namespace SignalRApi.Controllers
 			return Ok("Booking has deleted successfully!");
 		}
 
-		[HttpGet("BookingGet")]
+		[HttpGet("{id}")]
 		public IActionResult BookingGet(int id)
 		{
 			var value = _bookingService.TGetById(id);
