@@ -8,8 +8,8 @@ namespace SignalR.DtoLayer.SocialMediaDto
 {
 	public class CreateSocialMediaDto
 	{
-		public int SocialMediaTitle { get; set; }
-		public int SocialMediaUrl { get; set; }
-		public int SocialMediaIcon { get; set; }
+		public string SocialMediaTitle { get; set; }
+		public string SocialMediaUrl { get; set; }
+		public string SocialMediaIcon { get; set; }
 	}
 }

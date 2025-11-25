@@ -9,8 +9,8 @@ namespace SignalR.EntityLayer.Entitites
 	public class SocialMedia
 	{
 		public int SocialMediaID { get; set; }
-		public int SocialMediaTitle { get; set; }
-		public int SocialMediaUrl { get; set; }
-		public int SocialMediaIcon { get; set; }
+		public string SocialMediaTitle { get; set; }
+		public string SocialMediaUrl { get; set; }
+		public string SocialMediaIcon { get; set; }
 	}
 }

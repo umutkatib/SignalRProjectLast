@@ -258,14 +258,17 @@ namespace SignalR.DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SocialMediaID"), 1L, 1);
 
-                    b.Property<int>("SocialMediaIcon")
-                        .HasColumnType("int");
+                    b.Property<string>("SocialMediaIcon")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SocialMediaTitle")
-                        .HasColumnType("int");
+                    b.Property<string>("SocialMediaTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SocialMediaUrl")
-                        .HasColumnType("int");
+                    b.Property<string>("SocialMediaUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("SocialMediaID");
 
