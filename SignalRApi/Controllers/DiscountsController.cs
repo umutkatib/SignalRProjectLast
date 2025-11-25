@@ -40,7 +40,7 @@ namespace SignalRApi.Controllers
 			return Ok("Discount has added successfully!");
 		}
 
-		[HttpDelete]
+		[HttpDelete("{id}")]
 		public IActionResult DiscountDelete(int id)
 		{
 			var value = _discountService.TGetById(id);
@@ -48,7 +48,7 @@ namespace SignalRApi.Controllers
 			return Ok("Discount has deleted successfully!");
 		}
 
-		[HttpGet("DiscountGet")]
+		[HttpGet("{id}")]
 		public IActionResult DiscountGet(int id)
 		{
 			var value = _discountService.TGetById(id);
