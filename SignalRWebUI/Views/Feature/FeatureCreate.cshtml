@@ -1,0 +1,61 @@
+﻿@model CreateFeatureDto
+
+@{
+    ViewData["Title"] = "CreateFeature";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Öne Çıkan Alan</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<form method="post">
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Yeni Öne Çıkan Alan Girişi</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="FeatureTitle1">Başlık 1</label>
+								<input asp-for="FeatureTitle1" type="text" class="form-control" id="FeatureTitle1" placeholder="1. Başlığı Giriniz">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="FeatureTitle2">Başlık 2</label>
+								<input asp-for="FeatureTitle2" type="text" class="form-control" id="FeatureTitle2" placeholder="2. Başlığı Giriniz">
+							</div>
+						</div><div class="card-body">
+							<div class="form-group">
+								<label asp-for="FeatureTitle3">Başlık 3</label>
+								<input asp-for="FeatureTitle3" type="text" class="form-control" id="FeatureTitle3" placeholder="3. Başlığı Giriniz">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="FeatureDescription1">Açıklama 1</label>
+								<input asp-for="FeatureDescription1" type="text" class="form-control" id="FeatureDescription1" placeholder="1. Açıklamayı Giriniz">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="FeatureDescription2">Açıklama 2</label>
+								<input asp-for="FeatureDescription2" type="text" class="form-control" id="FeatureDescription2" placeholder="2. Açıklamayı Giriniz">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="FeatureDescription3">Açıklama 3</label>
+								<input asp-for="FeatureDescription3" type="text" class="form-control" id="FeatureDescription3" placeholder="3. Açıklamayı Giriniz">
+							</div>
+						</div>
+						<div class="card-action">
+							<button class="btn btn-success">Ekle</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
