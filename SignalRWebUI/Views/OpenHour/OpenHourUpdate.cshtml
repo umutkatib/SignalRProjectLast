@@ -1,0 +1,41 @@
+﻿@model UpdateOpenHourDto
+
+@{
+    ViewData["Title"] = "OpenHourUpdate";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Çalışma Saatleri</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<form method="post">
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Çalışma Saati Güncelleme</div>
+						</div>
+						<input type="hidden" asp-for="OpenHourID" />
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="OpenHourDays">Gün</label>
+								<input asp-for="OpenHourDays" type="text" class="form-control" id="OpenHourDays" placeholder="Gün Aralığı Giriniz">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="OpenHourHours">Saat</label>
+								<input asp-for="OpenHourHours" type="text" class="form-control" id="OpenHourHours" placeholder="Çalışma Saati Giriniz">
+							</div>
+						</div>
+						<div class="card-action">
+							<button class="btn btn-success">Güncelle</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+

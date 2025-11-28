@@ -1,0 +1,53 @@
+﻿@model List<ResultOpenHourDto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Çalışma Saatleri</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Çalışma Saatleri Listesi</div>
+					</div>
+					<div class="card-body">
+						<div class="card-sub">
+							Çalışma Saatleri ile ilgili işlemleri aşağıda bulunan tablodan yapabilirsiniz :
+						</div>
+						<table class="table mt-3">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Günler</th>
+									<th scope="col">Saatler</th>
+									<th scope="col">Sil</th>
+									<th scope="col">Güncelle</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in Model)
+								{
+									<tr>
+										<td>@item.OpenHourID</td>
+										<td>@item.OpenHourDays</td>
+										<td>@item.OpenHourHours</td>
+										<td><a href="/OpenHour/OpenHourDelete/@item.OpenHourID" class="btn btn-danger">Sil</a></td>
+										<td><a href="/OpenHour/OpenHourUpdate/@item.OpenHourID" class="btn btn-primary">Güncelle</a></td>
+									</tr>
+								}
+							</tbody>
+						</table>
+						<a href="/OpenHour/OpenHourCreate/" class="btn btn-success">Yeni Çalışma Saati Ekle</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+

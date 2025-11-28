@@ -31,14 +31,14 @@ namespace SignalRApi.Controllers
 		{
 			OpenHour openHour = new OpenHour()
 			{
-				OpenHourDays = createOpenHourDto.OpenHourHours,
+				OpenHourDays = createOpenHourDto.OpenHourDays,
 				OpenHourHours = createOpenHourDto.OpenHourHours,
 			};
 			_openHourService.TAdd(openHour);
 			return Ok("Open Hour has added successfully!");
 		}
 
-		[HttpDelete]
+		[HttpDelete("{id}")]
 		public IActionResult OpenHourDelete(int id)
 		{
 			var value = _openHourService.TGetById(id);
@@ -46,7 +46,7 @@ namespace SignalRApi.Controllers
 			return Ok("Open Hour has deleted successfully!");
 		}
 
-		[HttpGet("OpenHourGet")]
+		[HttpGet("{id}")]
 		public IActionResult OpenHourGet(int id)
 		{
 			var value = _openHourService.TGetById(id);
