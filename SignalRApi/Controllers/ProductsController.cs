@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SignalR.BusinessLayer.Abstract;
 using SignalR.DtoLayer.ProductDto;
@@ -25,6 +24,45 @@ namespace SignalRApi.Controllers
 		{
 			var values = _mapper.Map<List<ResultProductDto>>(_productService.TGetListAll());
 			return Ok(values);
+		}
+
+		[HttpGet("ProductCount")]
+		public IActionResult ProductCount()
+		{
+			return Ok(_productService.TProductCount());
+		}
+
+		[HttpGet("ProductCountByCategoryNameHamburger")]
+		public IActionResult ProductCountByCategoryNameHamburger()
+		{
+			return Ok(_productService.TProductCountByCategoryNameHamburger());
+		}
+
+		[HttpGet("ProductCountByCategoryNameDrink")]
+		public IActionResult ProductCountByCategoryNameDrink()
+		{
+			return Ok(_productService.TProductCountByCategoryNameDrink());
+		}
+
+		[HttpGet("ProductPriceByAvg")]
+		public IActionResult ProductPriceByAvg()
+		{
+			return Ok(_productService.TProductPriceByAvg());
+		}
+		[HttpGet("TProductNamePriceByMax")]
+		public IActionResult ProductNamePriceByMax()
+		{
+			return Ok(_productService.TProductNamePriceByMax());
+		}
+		[HttpGet("TProductNamePriceByMin")]
+		public IActionResult ProductNamePriceByMin()
+		{
+			return Ok(_productService.TProductNamePriceByMin());
+		}
+		[HttpGet("ProductAvgPriceByHamburger")]
+		public IActionResult ProductAvgPriceByHamburger()
+		{
+			return Ok(_productService.TProductAvgPriceByHamburger());
 		}
 
 		[HttpGet("ProductListWithCategory")]

@@ -5,6 +5,8 @@
 
 wwwroot/
 Migrations/
+Controllers/SignalRDefaultController.cs
+Views/SignalRDefault/
 
 # User-specific files
 *.rsuser
